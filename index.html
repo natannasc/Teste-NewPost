@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drogaria São Paulo</title>
+<!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+<!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+<!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+
+  <script src="novo.html"></script>
+  <script src="etiqueta.html"></script>
+  <script src="senha.html"></script>
+
+  
+
+<!--Favicon Icon-->
+<link rel="sortcut icon" href="img/newpostlogo.PNG" type="png/gif" />;
+ 
+</head>
+<body>
+  <div class="p-3 mb-2 bg-dark text-black">
+  <header>
+    <div class="container" id="nav-container">
+<!--BARRA DE NAVEGAÇAÕ-->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="nav-item nav-link" type="button" href="index.html">NewPost | Drogaria São Paulo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link btn-outline-danger" id="home-menu" href="#">Home</span></a>
+            <a class="nav-item nav-link btn-outline-danger" id="novo-menu" href="novo.html">Novo Pedido</a>
+            <a class="nav-item nav-link btn-outline-danger" id="etiqueta-menu" href="etiqueta.html">Etiqueta</a>
+            <a class="nav-item nav-link btn-outline-danger" id="senha-menu" href="senha.html">Alterar Senha</a>
+            <a class="nav-item nav-link btn-outline-danger" id="novo-menu" href="#">Logout</a>
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+
+<!-- Home + imagem retirada do link: https://www.aboutfarma.com.br/secaodesktop/farma-no-brasil/1808/drogaria-sao-paulo-e-eleita-a-melhor-farmacia-de-sao-paulo-pelo-5%C2%BA-ano-consecutivo -->
+      <div id="about-area">
+        <div class="card text-center">
+            
+              <div class="">
+              
+                <img class="img-fluid" src="img/drogariasp.png" alt="NewPost">
+              
+              </div>
+
+
+
+           
+            <br/>
+            <h3 class="title">Confira a tabela abaixo para verificar:</h3>
+            <h5>As unidades responsáveis pelo pedido.</h5>
+            <h5>Os clientes e seus dados cadastrais.</h5>
+            <h5>A data de criação do pedido, e o status do pedido.</h5>
+        
+<!--Pedidos-->
+<div id="services-area">
+  
+    <!-- Editable table -->
+<div class="card">
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+    TABELA DE PEDIDOS
+  </h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+      <span class="table-add float-right mb-3 mr-2"
+        ><a href="novo.html" class="text-success"
+          ><i class="fas fa-plus fa-2x" aria-hidden="true"></i></a
+      ></span>
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+          <tr>
+            <th class="text-center">Locker</th>
+            <th class="text-center">Cliente</th>
+            <th class="text-center">Pedido</th>
+            <th class="text-center">Telefone</th>
+            <th class="text-center">Data de Criação</th>
+            <th class="text-center">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pt-3-half" contenteditable="disabled">Shop Tiete</td>
+            <td class="pt-3-half" contenteditable="disabled">Maria</td>
+            <td class="pt-3-half" contenteditable="disabled">7639142</td>
+            <td class="pt-3-half" contenteditable="disabled">11 98452-4412</td>
+            <td class="pt-3-half" contenteditable="disabled">24/11/2020</td>
+            <td class="pt-3-half" contenteditable="disabled">Retirado</td>
+              
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr>
+            <td class="pt-3-half" contenteditable="disabled">Shop Tiete</td>
+            <td class="pt-3-half" contenteditable="disabled">Renato</td>
+            <td class="pt-3-half" contenteditable="disabled">7639143</td>
+            <td class="pt-3-half" contenteditable="disabled">11 98452-4412</td>
+            <td class="pt-3-half" contenteditable="disabled">24/11/2020</td>
+            <td class="pt-3-half" contenteditable="disabled">Retirado</td>
+              
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr>
+            <td class="pt-3-half" contenteditable="disabled">Shop Tiete</td>
+            <td class="pt-3-half" contenteditable="disabled">Emerson</td>
+            <td class="pt-3-half" contenteditable="disabled">7639144</td>
+            <td class="pt-3-half" contenteditable="disabled">11 98452-4412</td>
+            <td class="pt-3-half" contenteditable="disabled">24/11/2020</td>
+            <td class="pt-3-half" contenteditable="disabled">Depositado</td>
+              
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr>
+            <td class="pt-3-half" contenteditable="disabled">Shop Tiete</td>
+            <td class="pt-3-half" contenteditable="disabled">Esdras</td>
+            <td class="pt-3-half" contenteditable="disabled">7639145</td>
+            <td class="pt-3-half" contenteditable="disabled">11 98452-4412</td>
+            <td class="pt-3-half" contenteditable="disabled">24/11/2020</td>
+            <td class="pt-3-half" contenteditable="disabled">Atrasado</td>
+              
+          </tr>
+          <tr>
+            <td class="pt-3-half" contenteditable="disabled">Shop Tiete</td>
+            <td class="pt-3-half" contenteditable="disabled">William</td>
+            <td class="pt-3-half" contenteditable="disabled">7639146</td>
+            <td class="pt-3-half" contenteditable="disabled">11 98452-4412</td>
+            <td class="pt-3-half" contenteditable="disabled">24/11/2020</td>
+            <td class="pt-3-half" contenteditable="disabled">Depositado</td>
+              
+          </tr>
+
+          <tr>
+            <td class="pt-3-half" contenteditable="disabled">Shop Tiete</td>
+            <td class="pt-3-half" contenteditable="disabled">Julio</td>
+            <td class="pt-3-half" contenteditable="disabled">7639148</td>
+            <td class="pt-3-half" contenteditable="disabled">11 98452-4412</td>
+            <td class="pt-3-half" contenteditable="disabled">24/11/2020</td>
+            <td class="pt-3-half" contenteditable="disabled">Depositado</td>
+              
+          </tr>
+
+          <tr>
+            <td class="pt-3-half" contenteditable="disabled">Shop Tiete</td>
+            <td class="pt-3-half" contenteditable="disabled">Diego</td>
+            <td class="pt-3-half" contenteditable="disabled">7639149</td>
+            <td class="pt-3-half" contenteditable="disabled">11 98452-4412</td>
+            <td class="pt-3-half" contenteditable="disabled">24/11/2020</td>
+            <td class="pt-3-half" contenteditable="disabled">Depositado</td>
+              
+          </tr>
+
+
+
+
+
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!-- Editable table -->
+
+              
+<!--RODAPÉ-->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Ligue para:</span> (00)0000-0000</p>
+              <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> contato@locker.com.br</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Nosso endereço:</span> Rua Locker- 1314</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+ </div>
+            </div>
+  <!--RODAPÉ-->
+  <!--Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>

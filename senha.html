@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterar Senha</title>
+<!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+<!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+<!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+
+  <script src="senha.html"></script>
+
+<!--Favicon Icon-->
+<link rel="sortcut icon" href="img/newpostlogo.PNG" type="png/gif" />;
+ 
+</head>
+<body>
+  <div class="p-3 mb-2 bg-dark text-black">
+  <header>
+    <div class="container" id="nav-container">
+<!--BARRA DE NAVEGAÇAÕ-->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="nav-item nav-link" type="button" href="index.html"> Voltar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="card text-center">
+
+<!-- Home + imagem retirada do link: https://www.aboutfarma.com.br/secaodesktop/farma-no-brasil/1808/drogaria-sao-paulo-e-eleita-a-melhor-farmacia-de-sao-paulo-pelo-5%C2%BA-ano-consecutivo -->
+      <div id="about-area">
+        <div class="container">
+            <div class="row">
+              <div class="">
+                <br/>
+                <br/>
+                <h1 class="title">Drogaria São Paulo</h1>
+                <h5 class="title">Olá, faça a alteração da sua senha. Informe abaixo seus dados:</h5> 
+              </div>
+            </div>
+
+  <form class="row g-3">
+    <div class="col-md-4">
+      <label for="validationDefault01" class="form-label">Nome de Usuário</label>
+      <input type="text" class="form-control" id="validationDefault01" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationDefault02" class="form-label">CPF</label>
+      <input type="text" class="form-control" id="validationDefault02" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Senha Atual</label>
+        <input type="text" class="form-control" id="validationDefault02" required>
+      </div> 
+    <div class="col-md-4">
+      <label for="validationDefaultUsername" class="form-label">Email</label>
+      <div class="input-group">
+        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Você receberá sua nova senha por email
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Gerar nova senha</button>
+    </div>
+  </form>
+
+  <!--Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+  
+</body>
+</html>
+
+
+
